@@ -104,8 +104,8 @@ RUN rm -rf /build_nginx
 
 COPY ./nginx.conf /home/broadcaster/conf/.
 
-COPY ./cert.pem /home/broadcaster/ssl/.
-COPY ./key.pem /home/broadcaster/ssl/.
+COPY ./ssl/cert.pem /home/broadcaster/ssl/.
+COPY ./ssl/key.pem /home/broadcaster/ssl/.
 
 RUN chown -R broadcaster:broadcaster /home/broadcaster
 
