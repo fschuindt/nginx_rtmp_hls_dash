@@ -100,7 +100,7 @@ Dash - `http://192.168.1.192:4080/dash/testing.mpd?watchkey=16356b9f`
 
 However I don't recommend using this for production. Mind the stream and watch keys will be sent as plain-text on such connections.
 
-You can insert these addresses (changing to match your server IP) on the [VLC](https://www.videolan.org/vlc/index.html) network stream connection address input (`Ctrl + N`) to watch the stream. All HLS and Dash clients are supported, check for one on your application store if you don't want to use VLC.
+You can insert these addresses (changing to match your server IP) on the [VLC](https://www.videolan.org/vlc/index.html) network stream connection address input (`Ctrl + n`) to watch the stream. All HLS and Dash clients are supported, check for one on your application store if you don't want to use VLC.
 
 It also works on the browser, check for Web/JavaScript HLS and Dash clients; I recommend checking [Google's Shaka](https://github.com/google/shaka-player) Dash player.
 
