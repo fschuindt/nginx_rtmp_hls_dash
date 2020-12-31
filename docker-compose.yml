@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  streamer:
+  broadcaster:
     ports:
       - "4936:4936"
       - "4935:4935"
