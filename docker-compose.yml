@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  streamer:
+    ports:
+      - "4936:4936"
+      - "4935:4935"
+      - "4080:4080"
+      - "4443:4443"
+    build:
+      context: .
+      dockerfile: Dockerfile
