@@ -13,12 +13,12 @@ This is a Docker image to compile, configure and serve NGINX 1.19.6 with the [RT
 
 Build the image:
 ```
-$ docker-compose build streamer
+$ docker-compose build broadcaster
 ```
 
 Turn on the NGINX server:
 ```
-$ docker-compose up streamer
+$ docker-compose up broadcaster
 ```
 
 This will bind the `4080`, `4443`, `4080` and `4936` ports to your host machine, so the host will act as the NGINX server.
