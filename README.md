@@ -2,6 +2,8 @@
 
 This is a Docker image to compile, configure and serve NGINX 1.19.6 with the [RTMP module](https://github.com/arut/nginx-rtmp-module/) to support authenticated and encrypted [RTMP/RTMPS](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) media stream as intake, and broadcast [HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) and [MPEG-Dash](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) streams to multiple simultaneous users on the internet.
 
+Check out this [blog post](https://fschuindt.github.io/blog/2020/12/31/streaming-video-and-audio-of-an-usb-webcam-to-multiple-users-of-a-website-with-ssl-basic-authentication-and-invideo-timestamps-ffmpeg-rtmp-nginx-hls-mpeg-dash.html) for more information about it.
+
 **Warnings**  
 1. I've created a dummy SSL certificate/key pair and included it on `./ssl`. Be sure to use a different/real one if you're going to run this on production.
 
