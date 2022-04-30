@@ -23,8 +23,8 @@ RUN git clone $NGINX_RTMP_GIT
 RUN wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz && \
     tar xzvf pcre-8.44.tar.gz
 
-RUN wget https://www.zlib.net/zlib-1.2.11.tar.gz && \
-    tar xzvf zlib-1.2.11.tar.gz
+RUN wget https://www.zlib.net/zlib-1.2.12.tar.gz && \
+    tar xzvf zlib-1.2.12.tar.gz
 
 RUN wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz && \
     tar xzvf openssl-1.1.1g.tar.gz
@@ -89,7 +89,7 @@ RUN cd nginx && ./auto/configure --prefix=/etc/nginx \
             --with-compat \
             --with-pcre=../pcre-8.44 \
             --with-pcre-jit \
-            --with-zlib=../zlib-1.2.11 \
+            --with-zlib=../zlib-1.2.12 \
             --with-openssl=../openssl-1.1.1g \
             --with-openssl-opt=no-nextprotoneg \
             --with-debug
