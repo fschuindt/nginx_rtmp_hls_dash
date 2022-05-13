@@ -20,7 +20,7 @@ WORKDIR /build_nginx
 RUN git clone --depth 1 --branch $NGINX_RELEASE $NGINX_GIT
 RUN git clone $NGINX_RTMP_GIT
 
-RUN wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz && \
+RUN wget http://ftp.cs.stanford.edu/pub/exim/pcre/pcre-8.44.tar.gz && \
     tar xzvf pcre-8.44.tar.gz
 
 RUN wget https://www.zlib.net/zlib-1.2.12.tar.gz && \
